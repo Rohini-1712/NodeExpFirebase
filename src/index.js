@@ -21,12 +21,5 @@ app.use("/update/id", updateUserRoute);
 app.use("/send", sendOtpToUserRoute);
 app.use("/verify", verifyOtpRoute);
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(cors);
-// app.post("/sendemail", sendEmail);
-// app.post("/getcred", authCred);
-
-
 app.listen(PORT, function () {
 console.log(`Demo project at: ${PORT}!`); });
